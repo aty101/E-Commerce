@@ -8,7 +8,7 @@ import NavButtons from "../UI/NavButtons";
 export default function NavBar() {
   return (
     <header>
-      <nav className=" py-5 text-xl justify-center flex   gap-20 items-center">
+      <nav className=" py-6 text-xl justify-center flex   gap-15 items-center">
         <h1 className="font-bold">Cyber</h1>
         <Input style={""} />
         <div className="flex gap-10">

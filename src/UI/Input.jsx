@@ -16,7 +16,7 @@ export default function Input({
       type={type}
       value={value}
       onChange={onChange}
-      className={`border border-black rounded-md p-1 ${style}`}
+      className={`border border-black rounded-md px-10 py-2 ${style}`}
       placeholder={placeholder}
     />
   );
