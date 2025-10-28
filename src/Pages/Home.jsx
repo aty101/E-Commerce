@@ -1,14 +1,13 @@
-import React from "react";
-import NewArrival from "../Components/NewArrival";
 import BrowseByCategory from "../Components/BrowseByCategory/BrowseByCategory";
 import ProductsList from "../Components/ShowProducts/ProductsList";
 import DiscountsList from "../Components/Discounts/DiscountsList";
 import Footer from "../Components/Footer";
+import BannersList from "../Components/BannersList";
 
 export default function Home() {
   return (
     <main className="">
-      <NewArrival></NewArrival>
+      <BannersList></BannersList>
       <BrowseByCategory></BrowseByCategory>
       <ProductsList></ProductsList>
       <DiscountsList></DiscountsList>
