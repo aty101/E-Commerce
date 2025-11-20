@@ -1,4 +1,4 @@
-export const products = {
+export const specialItems = {
   "New Arrival": [
     {
       image: "/images/Iphone 14 pro 1.png",

@@ -14,9 +14,9 @@ export default function ProductCard({
         <div className="flex flex-row-reverse w-full ">
           <CiHeart size={30} className="opacity-50 color" />
         </div>
-        <Image src={image || ""} alt={name || ""} width={120} height={100} />
+        <Image src={image || ""} alt={name || ""} width={120} height={120} className="w-[120px] h-[120px]"/>
         <div>
-          <p className="text-lg line-clamp-2 text-center overflow-hidden w-full">
+          <p className="text-lg line-clamp-1 text-center overflow-hidden w-full">
             {name || ""}
           </p>
         </div>

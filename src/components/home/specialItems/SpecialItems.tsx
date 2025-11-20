@@ -1,8 +1,9 @@
 "use client";
-import ProductCard from "@/ui/ProductCard";
+
 import SpecilaItemsNav from "./SpecilaItemsNav";
 import { createContext, useState } from "react";
-import { products } from "./products";
+import { specialItems } from "@/utils/specialItems";
+import ProductsList from "@/ui/ProductsList";
 
 type ContextType = {
   currentList: "New Arrival" | "Bestseller" | "Featured Product";
@@ -20,15 +21,7 @@ export default function SpecialItems() {
     <nav className="py-10">
       <SpecialProductsContex.Provider value={{ currentList, setCurrentList }}>
         <SpecilaItemsNav />
-        <div className="flex flex-wrap gap-2 justify-center ">
-          {products[currentList].map((product, index) => (
-            <ProductCard
-              key={index}
-              image={product.image}
-              name={product.name}
-            />
-          ))}
-        </div>
+        <ProductsList data={specialItems[currentList]} />
       </SpecialProductsContex.Provider>
     </nav>
   );
